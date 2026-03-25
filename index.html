@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -54,6 +54,10 @@
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.jpg" alt="Produits italiens artisanaux">
+    </div>
+    <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">Disponible à La Réunion</div>
@@ -67,17 +71,21 @@
     </div>
     
     <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-number">500+</div>
-        <div class="stat-label">Produits</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">50+</div>
-        <div class="stat-label">Producteurs</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">200+</div>
-        <div class="stat-label">Clients</div>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Produits</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Producteurs</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Clients</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -86,14 +94,19 @@
   <section id="univers" class="universe">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 class="section-title">Notre univers</h2>
+        <span class="section-tag">Nos Univers</span>
+        <h2 class="section-title">L'excellence italienne à votre service</h2>
         <p class="section-subtitle">Explorez les saveurs authentiques de l'Italie à travers nos spécialités culinaires et nos producteurs italiens sélectionnés avec soin.</p>
       </div>
       
       <div class="universe-grid">
         <div class="universe-card fade-in">
-          <div class="universe-card-bg" style="background: linear-gradient(135deg, #2D5016 0%, #1F3A0F 100%);"></div>
+          <div class="universe-card-image">
+            <img src="assets/images/fresh-products.jpg" alt="Produits frais italiens">
+          </div>
+          <div class="universe-card-overlay"></div>
           <div class="universe-card-content">
+            <span class="universe-tag">Fraîcheur garantie</span>
             <h3>Produits Frais</h3>
             <p>Fromages, charcuteries et légumes frais importés directement d'Italie pour garantir authenticité et fraîcheur.</p>
             <a href="#produits" class="btn btn-secondary">Découvrez notre univers</a>
@@ -101,8 +114,12 @@
         </div>
         
         <div class="universe-card fade-in">
-          <div class="universe-card-bg" style="background: linear-gradient(135deg, #C41E3A 0%, #9B1B30 100%);"></div>
+          <div class="universe-card-image">
+            <img src="assets/images/gourmet.jpg" alt="Épicerie fine italienne">
+          </div>
+          <div class="universe-card-overlay"></div>
           <div class="universe-card-content">
+            <span class="universe-tag">Sélection premium</span>
             <h3>Épicerie Fine</h3>
             <p>Pâtes artisanales, sauces tomates, huiles d'olive extra vierge et condiments traditionnels italiens.</p>
             <a href="#produits" class="btn btn-secondary">Découvrez notre univers</a>
@@ -116,13 +133,19 @@
   <section id="produits" class="products">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 class="section-title">Nos produits</h2>
+        <span class="section-tag">Notre Catalogue</span>
+        <h2 class="section-title">Nos produits phares</h2>
         <p class="section-subtitle">Une large gamme de produits italiens frais, surgelés et secs, adaptés aux besoins des professionnels de la restauration.</p>
       </div>
       
       <div class="products-grid">
         <div class="product-card fade-in">
-          <div class="product-image">🧀</div>
+          <div class="product-image">
+            <img src="assets/images/parmigiano.jpg" alt="Parmigiano Reggiano DOP">
+            <div class="product-overlay">
+              <span class="product-badge">DOP</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Fromages</div>
             <h3 class="product-title">Parmigiano Reggiano DOP</h3>
@@ -131,7 +154,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🍕</div>
+          <div class="product-image">
+            <img src="assets/images/flour.jpg" alt="Farine 00 Caputo">
+            <div class="product-overlay">
+              <span class="product-badge">Pro</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Pizzeria</div>
             <h3 class="product-title">Farine 00 Caputo</h3>
@@ -140,7 +168,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🍝</div>
+          <div class="product-image">
+            <img src="assets/images/pasta.jpg" alt="Pâtes Artisanales">
+            <div class="product-overlay">
+              <span class="product-badge">IGP</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Pâtes</div>
             <h3 class="product-title">Pâtes Artisanales</h3>
@@ -149,7 +182,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🫒</div>
+          <div class="product-image">
+            <img src="assets/images/olive-oil.jpg" alt="Huile d'Olive Extra Vierge">
+            <div class="product-overlay">
+              <span class="product-badge">Bio</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Huiles</div>
             <h3 class="product-title">Huile d'Olive Extra Vierge</h3>
@@ -158,7 +196,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🍅</div>
+          <div class="product-image">
+            <img src="assets/images/tomato.jpg" alt="Sauce Tomate San Marzano">
+            <div class="product-overlay">
+              <span class="product-badge">DOP</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Sauces</div>
             <h3 class="product-title">Sauce Tomate San Marzano</h3>
@@ -167,7 +210,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🥓</div>
+          <div class="product-image">
+            <img src="assets/images/prosciutto.jpg" alt="Prosciutto di Parma DOP">
+            <div class="product-overlay">
+              <span class="product-badge">DOP</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Charcuterie</div>
             <h3 class="product-title">Prosciutto di Parma DOP</h3>
@@ -176,7 +224,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🍨</div>
+          <div class="product-image">
+            <img src="assets/images/gelato.jpg" alt="Gelato Artisanal">
+            <div class="product-overlay">
+              <span class="product-badge">Artisanal</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Surgelés</div>
             <h3 class="product-title">Gelato Artisanal</h3>
@@ -185,7 +238,12 @@
         </div>
         
         <div class="product-card fade-in">
-          <div class="product-image">🍷</div>
+          <div class="product-image">
+            <img src="assets/images/wine.jpg" alt="Vins Italiens">
+            <div class="product-overlay">
+              <span class="product-badge">DOC</span>
+            </div>
+          </div>
           <div class="product-info">
             <div class="product-category">Boissons</div>
             <h3 class="product-title">Vins Italiens</h3>
@@ -194,7 +252,7 @@
         </div>
       </div>
       
-      <div style="text-align: center; margin-top: 3rem;">
+      <div class="products-cta">
         <a href="#" class="btn btn-primary">Voir tous les produits</a>
       </div>
     </div>
@@ -206,22 +264,27 @@
       <div class="juice-grid">
         <div class="juice-content">
           <div class="section-header fade-in" style="text-align: left;">
+            <span class="section-tag">Nouveauté</span>
             <h2 class="section-title">Les jus de fruits Italiens</h2>
             <p class="section-subtitle">Savourez notre sélection exclusive de jus de fruits italiens, parfaits pour compléter votre offre gastronomique.</p>
           </div>
           
           <div class="juice-features">
             <div class="juice-feature fade-in">
-              <div class="juice-feature-icon">🍊</div>
-              <div>
+              <div class="juice-feature-image">
+                <img src="assets/images/juice-orange.jpg" alt="Jus d'orange sicilien">
+              </div>
+              <div class="juice-feature-content">
                 <h4>Jus d'Orange de Sicile</h4>
                 <p>Oranges rouges de Sicile pressées à froid</p>
               </div>
             </div>
             
             <div class="juice-feature fade-in">
-              <div class="juice-feature-icon">🍋</div>
-              <div>
+              <div class="juice-feature-image">
+                <img src="assets/images/juice-lemon.jpg" alt="Citron de Menton">
+              </div>
+              <div class="juice-feature-content">
                 <h4>Citron de Menton</h4>
                 <p>Citrons frais aux arômes intenses</p>
               </div>
@@ -229,7 +292,7 @@
             
             <div class="juice-feature fade-in">
               <div class="juice-feature-icon">🍇</div>
-              <div>
+              <div class="juice-feature-content">
                 <h4>Jus de Raisin</h4>
                 <p>Cépages italiens sélectionnés</p>
               </div>
@@ -237,7 +300,7 @@
             
             <div class="juice-feature fade-in">
               <div class="juice-feature-icon">🍑</div>
-              <div>
+              <div class="juice-feature-content">
                 <h4>Pêche Blanche</h4>
                 <p>Pêches de Romagne juteuses</p>
               </div>
@@ -249,7 +312,9 @@
         
         <div class="juice-visual fade-in">
           <div class="juice-bottle">
-            <div class="juice-bottle-icon">🧃</div>
+            <div class="juice-bottle-icon">
+              <img src="assets/images/juice-orange.jpg" alt="Succhi di Frutta">
+            </div>
             <h3>Succhi di Frutta</h3>
             <p>100% fruits italiens, sans conservateurs ni colorants</p>
           </div>
@@ -262,6 +327,7 @@
   <section id="client" class="client">
     <div class="container">
       <div class="section-header fade-in">
+        <span class="section-tag">Espace Pro</span>
         <h2 class="section-title">Devenez client TOPAZE</h2>
         <p class="section-subtitle">Créez votre compte en ligne simplement et rapidement pour accéder à nos produits et passer vos commandes.</p>
       </div>
@@ -269,19 +335,35 @@
       <div class="client-card fade-in">
         <div class="client-benefits">
           <div class="client-benefit">
-            <div class="client-benefit-icon">📦</div>
+            <div class="client-benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
             <h4>Catalogue complet</h4>
             <p>Accès à 500+ produits</p>
           </div>
           
           <div class="client-benefit">
-            <div class="client-benefit-icon">🚚</div>
+            <div class="client-benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
             <h4>Livraison rapide</h4>
             <p>Sur toute l'île</p>
           </div>
           
           <div class="client-benefit">
-            <div class="client-benefit-icon">💰</div>
+            <div class="client-benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
             <h4>Prix professionnels</h4>
             <p>Tarifs préférentiels</p>
           </div>
@@ -296,13 +378,15 @@
   <section id="producteurs" class="producers">
     <div class="container">
       <div class="section-header fade-in">
+        <span class="section-tag">Nos Partenaires</span>
         <h2 class="section-title">Au cœur de l'Italie : nos producteurs</h2>
         <p class="section-subtitle">Nous collaborons avec les meilleurs artisans et producteurs italiens pour vous offrir des produits d'exception.</p>
       </div>
       
       <div class="producers-grid">
         <div class="producer-card fade-in">
-          <div class="producer-image" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);">
+          <div class="producer-image">
+            <img src="assets/images/producer-cheese.jpg" alt="Caseificio Ferrari">
             <div class="producer-flag">🇮🇹</div>
           </div>
           <div class="producer-info">
@@ -313,7 +397,8 @@
         </div>
         
         <div class="producer-card fade-in">
-          <div class="producer-image" style="background: linear-gradient(135deg, #228B22 0%, #32CD32 100%);">
+          <div class="producer-image">
+            <img src="assets/images/producer-pasta.jpg" alt="Pastificio Di Martino">
             <div class="producer-flag">🇮🇹</div>
           </div>
           <div class="producer-info">
@@ -324,7 +409,8 @@
         </div>
         
         <div class="producer-card fade-in">
-          <div class="producer-image" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">
+          <div class="producer-image">
+            <img src="assets/images/producer-oil.jpg" alt="Frantoio Franci">
             <div class="producer-flag">🇮🇹</div>
           </div>
           <div class="producer-info">
@@ -335,7 +421,8 @@
         </div>
         
         <div class="producer-card fade-in">
-          <div class="producer-image" style="background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);">
+          <div class="producer-image">
+            <img src="assets/images/producer-tomato.jpg" alt="Azienda Agricola Sapori">
             <div class="producer-flag">🇮🇹</div>
           </div>
           <div class="producer-info">
@@ -346,7 +433,8 @@
         </div>
         
         <div class="producer-card fade-in">
-          <div class="producer-image" style="background: linear-gradient(135deg, #FF6347 0%, #FF4500 100%);">
+          <div class="producer-image">
+            <img src="assets/images/producer-citrus.jpg" alt="Agrumeti di Sicilia">
             <div class="producer-flag">🇮🇹</div>
           </div>
           <div class="producer-info">
@@ -357,7 +445,8 @@
         </div>
         
         <div class="producer-card fade-in">
-          <div class="producer-image" style="background: linear-gradient(135deg, #8B0000 0%, #4B0000 100%);">
+          <div class="producer-image">
+            <img src="assets/images/producer-meat.jpg" alt="Salumificio Rossi">
             <div class="producer-flag">🇮🇹</div>
           </div>
           <div class="producer-info">
@@ -373,7 +462,7 @@
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
-      <div class="fade-in">
+      <div class="cta-content fade-in">
         <h2>Prêt à découvrir nos produits ?</h2>
         <p>Contactez-nous dès aujourd'hui pour devenir client et accéder à notre catalogue complet.</p>
         <a href="#client" class="btn btn-secondary">Nous contacter</a>
@@ -389,9 +478,15 @@
           <div class="footer-logo">Topaze <span>&</span> Strada</div>
           <p class="footer-description">Votre partenaire de confiance pour les produits italiens authentiques à La Réunion. Qualité, fraîcheur et tradition depuis 2010.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
           </div>
         </div>
         
@@ -417,10 +512,10 @@
         
         <div class="footer-contact">
           <h4 class="footer-title">Contact</h4>
-          <p>📍 Zone Industrielle, Saint-Denis</p>
-          <p>📞 +262 262 XX XX XX</p>
-          <p>✉️ contact@topaze-strada.re</p>
-          <p>🕐 Lun-Ven : 6h00 - 16h00</p>
+          <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Zone Industrielle, Saint-Denis</p>
+          <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +262 262 XX XX XX</p>
+          <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> contact@topaze-strada.re</p>
+          <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Lun-Ven : 6h00 - 16h00</p>
         </div>
       </div>
       
